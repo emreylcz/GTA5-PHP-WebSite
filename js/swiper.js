@@ -1,14 +1,3 @@
-/**
- * Swiper 4.1.0
- * Most modern mobile touch slider and framework with hardware accelerated transitions
- * http://www.idangero.us/swiper/
- *
- * Copyright 2014-2018 Vladimir Kharlampidi
- *
- * Released under the MIT License
- *
- * Released on: January 13, 2018
- */
 
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
@@ -16,19 +5,6 @@
 	(global.Swiper = factory());
 }(this, (function () { 'use strict';
 
-/**
- * Dom7 2.0.1
- * Minimalistic JavaScript library for DOM manipulation, with a jQuery-compatible API
- * http://framework7.io/docs/dom.html
- *
- * Copyright 2017, Vladimir Kharlampidi
- * The iDangero.us
- * http://www.idangero.us/
- *
- * Licensed under MIT
- *
- * Released on: October 2, 2017
- */
 var Dom7 = function Dom7(arr) {
   var self = this;
   // Create array-like object
@@ -461,7 +437,6 @@ function css(props, value) {
   return this;
 }
 
-// Iterate over the collection passing elements to `callback`
 function each(callback) {
   var this$1 = this;
 
@@ -6091,10 +6066,6 @@ var Controller = {
     var multiplier;
     var controlledTranslate;
     function setControlledTranslate(c) {
-      // this will create an Interpolate function based on the snapGrids
-      // x is the Grid of the scrolled scroller and y will be the controlled scroller
-      // it makes sense to create this only once and recall it for the interpolation
-      // the function does a lot of value caching for performance
       var translate = c.rtl && c.params.direction === 'horizontal' ? -swiper.translate : swiper.translate;
       if (swiper.params.controller.by === 'slide') {
         swiper.controller.getInterpolateFunction(c);
